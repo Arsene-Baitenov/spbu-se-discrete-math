@@ -7,7 +7,7 @@
 #include <fstream>
 
 using namespace std;
-
+    
 void coding(string infilename, string outfilename) {
     ifstream in(infilename);
     ofstream out(outfilename);
@@ -34,11 +34,9 @@ void coding(string infilename, string outfilename) {
     }
     out << code;
     cout << code << endl;
-    
-    /*for (auto to : mp) {
-        cout << to.first << " " << to.second << endl;
-    }*/
+
     in.close();
+    out.close();
     mp.clear();
 }
 
